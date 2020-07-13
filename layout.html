@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css layout</title>
+    <style>
+        li{
+            list-style:none;
+        }
+        header{
+            background-color : orange;
+        }
+        #wrap{
+            overflow: auto;
+            /* 자식이 float인 경우에는 자식으로 생각하지 않는다.
+            높이 값으로 생각하지 않는다. overflow는 자식이라고 인식하게 한다.*/
+            margin: 20px 0px;
+        }
+        footer{
+            background-color : orange;
+            clear: left; /* 위의 float를 인식해라. */
+        }
+        .left, .right, .realright {
+            float: left;
+            height: 200px;
+        }
+        .left{
+            width: 17%;
+            margin-right:3%;
+            background-color : #f8ad53;
+        }
+        .right{
+            width: 60%;
+            text-align:center;
+            background-color : antiquewhite;
+        }
+        .realright{
+            width: 17%;
+            margin-left: 3%;
+            text-align: center;
+            background-color: darkseagreen;
+        }
+
+        .right > h2{
+            position: relative;
+        }
+        .right .emoticon{
+            position: absolute;
+            top: 0px;
+            right: 25%;
+            color: darkseagreen;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <header>css layout</header>
+    <div id="wrap">
+        <nav class="left">
+            <ul>
+                <li>menu</li>
+                <li>menu2</li>
+                <li>menu3</li>
+                <li>menu4</li>
+            </ul>
+        </nav>
+        <div class="right">
+            <h2>
+                <span>반갑습니다</span>
+                <div class="emoticon">:)</div>
+            </h2>
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+            </ul>
+        </div>
+        <div class="realright">
+            <div>오른쪽 메뉴</div>
+        </div>
+    </div>
+    <footer>주식회사</footer>
+</body>
+</html>
