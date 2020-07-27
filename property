@@ -127,3 +127,13 @@ value 4. (option) delay
     animation-iteration-count: infinite;
     animation-direction: alternate; // 로직 방향을 번갈아 가면서 진행
 }
+
+[box-shadow]
+value 1. h-offset // x 축 그림자 이동
+value 2. v-offset // y 축 그림자 이동
+value 3. blur // 흐린 정도
+value 4. spread // 그림자 사이즈
+value 5. color // 색상
+// neumorphis.io 에서 내 느낌대로 정하면 코드 생성
+
+
