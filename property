@@ -76,3 +76,12 @@ Block 박스들은 float를 없는 취급하지만, Inline 박스들은 기가�
     src: url("./assets/font/폰트명.eot");
 }
 css 파일에 @import url("./fonts.css");
+
+[background]
+- background-img: url("");
+- background-repeat: no-repeat;
+- background-size
+    contain, cover, 100% auto
+- background-position: center center (x축 y축)
+
+
