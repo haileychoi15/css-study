@@ -58,6 +58,21 @@ Block 박스들은 float를 없는 취급하지만, Inline 박스들은 기가�
 5. flex-wrap: wrap; 하면 axis 흐름이 한개가 아니라 늘어난다.
     그래서 정렬이 이상해 보일 수 있음. 이때는 align-content property를 사용하면 전체 흐름의 axis를 기준으로 정렬할 수 있다.
 
+[typography]
+- text-indent
+    들여쓰기, 내어쓰기
+- text-transform
+    none, capitalize(단어 첫문자는 대문자), uppercase, lowercase
+- text-decoration
+    none, underline, line-through, overline
+- font-style
+    normal, italic
 
-
-
+1. 가지고 있는 폰트 제공하기
+@font-face {
+    font-family: "내가 부르기로 한 폰트명";
+    font-style: normal;
+    font-weight: 400;
+    src: url("./assets/font/폰트명.eot");
+}
+css 파일에 @import url("./fonts.css");
