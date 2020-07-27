@@ -44,4 +44,22 @@ Block 박스들은 float를 없는 취급하지만, Inline 박스들은 기가�
     기준이 viewport
     width을 따로 주지 않으면 content만큼 줄어든다.
 
+[flexbox]
+1. 정렬 하고자 하는 요소들의 부모 요소한테 display: flex / inline-flex 선언
+2. 가로 / 세로 정렬 결정 flex-direction: row / column
+    flex를 사용하면 눈에 안보이는 두 개의 Axis(축)이 생긴다.
+    어떻게 정렬을 결정했느냐에 따라서 Axis가 달라진다.
+    flex 방향에 따라 Main axis가 생기고 이와 수직인 Cross axis가 생긴다.
+3. 무조건 한 줄 안에 다 정렬 할건지 결정
+    flex-wrap: nowrap; 감싸지 않고 사이즈를 줄여서라도 한 줄에 정렬
+    flex-wrap: wrap; 사이즈 유지하면서 공간이 모자르면 다음 줄에 정렬
+4. Main axis에 따라 정렬하고 싶으면 justify-content property 사용
+   Closs axis에 따라 정렬하고 싶으면 align-items, align-content 사용
+5. flex-wrap: wrap; 하면 axis 흐름이 한개가 아니라 늘어난다.
+    그래서 정렬이 이상해 보일 수 있음. 이때는 align-content property를 사용하면 전체 흐름의 axis를 기준으로 정렬할 수 있다.
+
+
+
+
+
 
