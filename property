@@ -81,7 +81,14 @@ css 파일에 @import url("./fonts.css");
 - background-img: url("");
 - background-repeat: no-repeat;
 - background-size
-    contain, cover, 100% auto
+    contain, cover, 100% auto (가로 세로)
 - background-position: center center (x축 y축)
+
+[transition]
+value 1. property 선언
+value 2. duration 선언
+value 3. timing-function
+    - ease-in 천천히 휙 , ease-out 휙 천천히 , ease-in-out, cubic-bezier()
+value 4. delay
 
 
