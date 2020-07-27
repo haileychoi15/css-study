@@ -87,8 +87,43 @@ css 파일에 @import url("./fonts.css");
 [transition]
 value 1. property 선언
 value 2. duration 선언
-value 3. timing-function
+value 3. (option) timing-function
     - ease-in 천천히 휙 , ease-out 휙 천천히 , ease-in-out, cubic-bezier()
-value 4. delay
+value 4. (option) delay
 
+[animation]
+1. 로직을 작성한다.
 
+@keyframes 로직명 {
+    from{
+
+    }
+
+    to{
+
+    }
+}
+
+@keyframes 로직명 {
+    0% {
+
+    }
+
+    50% {
+
+    }
+
+    100%{
+
+    }
+}
+
+2. 애니메이션을 적용한다.
+.box{
+    animation-name: 로직명;
+    animation-duration: 2000ms;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1000ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; // 로직 방향을 번갈아 가면서 진행
+}
