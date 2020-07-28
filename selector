@@ -1,0 +1,67 @@
+[type, class, id]
+
+[Child(자식 선택자), Descendant(자손 선택자) & Sibling Combinations(형제 선택자)]
+    parent  > child{ // 직계 자식
+
+    }
+    parent descendants{ // 모든 자손(공백으로 표현)
+
+    }
+
+    <li>something</li>
+    <li class="active">something</li>
+    <li>something</li>
+    <li>something</li>
+    <li>something</li>
+
+    .active ~ li{ // active 클래스 다음에 따라 오는 모든 li
+        color: #066ff;
+    }
+
+    .active + li{ // active 클래스 바로 다음에 오는 하나의 li
+        color: #ff49f9;
+    }
+
+[Structural Pseudo-classes(가상 클래스)]
+
+    li:first-child{
+        color: #066ff;
+    }
+
+    li:last-child{
+        color: #ffc82c;
+    }
+
+    li:nth-child(3){
+        color: #ff49f9;
+    }
+
+    li:nth-child(2n){ // 짝수
+        color: #ff49f9;
+    }
+
+    li:nth-child(2n-1){ // 홀수
+        color: #ff49f9;
+    }
+
+[User Action Pseudo-classes]
+
+    a:hover{ // 마우스 올렸을 때
+
+    }
+
+    a:active{ // 클릭 하는 순간
+
+    }
+
+    input:focus{ // 클릭을 하고 작성을 하려고 할 때
+
+    }
+
+[Selector 우선 순위]
+    - 똑같은 조건이라면 나중에 선언된 것이 우선
+
+    - 비유 .. 올림픽처럼
+        금메달 : id
+        은메달 : class, psedudo-class
+        동메달 : type
